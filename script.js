@@ -26,7 +26,8 @@
             "message": message,
             "dateTime": dateAndTime
         });
- 
+        
+        document.getElementById("message").value = "";
         // prevent form from submitting
         return false;
     }
