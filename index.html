@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru_RU">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
+ 
+	<!-- include firebase database -->
+	<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-database.js"></script>
+
+	<script src="script.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<title>mesaжер</title>
+</head>
+<body>
+
+<div id="bc">
+<!-- create a form to send message -->
+<form onsubmit="return sendMessage();">
+    <input id="message" placeholder="Введите сообщение" autocomplete="off">
+ 
+    <input type="submit">
+</form>
+
+<ul id="messages"></ul>
+</div>
+</body>
+</html>
